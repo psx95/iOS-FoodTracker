@@ -17,7 +17,7 @@ class Meal {
     //MARK: Initialisation
     init?(name: String, photo: UIImage?, rating: Int) {
         
-        guard name.isEmpty else {
+        guard !name.isEmpty else {
             return nil
         }
         
